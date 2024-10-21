@@ -3,11 +3,9 @@
 import pytest
 from httpx import AsyncClient, ASGITransport
 from app.main import app
-from dotenv import load_dotenv
 import os
 import json
 
-load_dotenv()  # Ensure environment variables are loaded
 
 # Paths to the JSON storage files
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
